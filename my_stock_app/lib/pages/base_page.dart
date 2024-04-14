@@ -12,6 +12,7 @@ class BasePage extends StatefulWidget {
 }
 
 class _BasePageState extends State<BasePage> {
+
   int _selectedIndex = 0;
 
   void _navigationBar(int index) {
