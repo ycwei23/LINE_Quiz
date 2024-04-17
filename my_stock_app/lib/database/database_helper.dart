@@ -9,7 +9,8 @@ class DatabaseHelper {
 
   Future<Database> get db async {
     if (_db == null) {
-      _db = await _initDb();
+      _db = await 
+      _initDb();
     }
     return _db!;
   }
@@ -58,5 +59,26 @@ class DatabaseHelper {
       batch.insert('stocks', data);
     }
     await batch.commit();
+  }
+
+  Future<List<Map<String, dynamic>>> selectByCodeOrName(String keyword) async {
+    final db = await instance.db;
+    final List<Map<String, dynamic>> result = await db.query(
+      'stocks',
+      where: 'stockCode LIKE ? OR stockName LIKE ?',
+      whereArgs: ['%$keyword%', '%$keyword%'],
+    );
+    return result;
+  }
+
+  Future<Map<String, dynamic>?> getStockByCode(String stockCode) async {
+    final db = await instance.db;
+    final List<Map<String, dynamic>> result = await db.query(
+      'stocks',
+      where: 'stockCode = ?',
+      whereArgs: [stockCode],
+      limit: 1,
+    );
+    return result.isNotEmpty ? result.first : null;
   }
 }
