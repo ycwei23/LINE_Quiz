@@ -66,7 +66,7 @@ class _StockInfoPageState extends State<StockInfoPage> {
             child: TextField(
               controller: _searchController,
               decoration: InputDecoration(
-                hintText: 'Search by stock code or name',
+                hintText: '搜尋「股票名稱」或「股票代碼」',
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(15),
                   borderSide: BorderSide(color: Colors.blue),
