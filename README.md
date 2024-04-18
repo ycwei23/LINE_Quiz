@@ -73,11 +73,10 @@ UI 計劃包括以下頁面：
 
 ## App Demo
 <div>
-    <img src="image/2.png" alt="圖片2" width="400"/>
-    <img src="image/3.png" alt="圖片3" width="400"/>
-    <img src="image/4.png" alt="圖片4" width="400"/>
-    <img src="image/5.png" alt="圖片5" width="400"/>
-    <img src="image/6.png" alt="圖片6" width="400"/>
-    <img src="image/7.png" alt="圖片7" width="400"/>
-    <img src="image/8.png" alt="圖片8" width="400"/>
+    <img src="image/3.png" alt="圖片3" width="250"/>
+    <img src="image/4.png" alt="圖片4" width="250"/>
+    <img src="image/5.png" alt="圖片5" width="250"/>
+    <img src="image/6.png" alt="圖片6" width="250"/>
+    <img src="image/7.png" alt="圖片7" width="250"/>
+    <img src="image/8.png" alt="圖片8" width="250"/>
 </div>
